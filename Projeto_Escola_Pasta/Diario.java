@@ -1,17 +1,11 @@
 package Projeto_Escola_Pasta;
+import java.util.*;
 
 public class Diario {
 
     private String codigo;
-    
-    Professor professor = new Professor();
-    Aluno aluno = new Aluno();
-    Disciplina disciplina = new Disciplina();
-
-    public void mostrarProfessor(){
-        professor.setNome("Francisco");
-        
-    }
+    private Professor professor;
+    private List<Aluno> alunos = new ArrayList<>();
 
     public String getCodigo() {
         return codigo;
@@ -20,6 +14,14 @@ public class Diario {
         this.codigo = codigo;
     }
 
+    public Professor getProfessor() {
+        return professor;
+    }
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
 
-    
+    public List<Aluno> getAlunos(){
+        return alunos;
+    }
 }
