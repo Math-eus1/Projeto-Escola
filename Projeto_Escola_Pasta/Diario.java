@@ -6,6 +6,7 @@ public class Diario {
     private String codigo;
     private Professor professor;
     private List<Aluno> alunos = new ArrayList<>();
+    private CalcularMedia calcular;
 
     public String getCodigo() {
         return codigo;
@@ -23,5 +24,13 @@ public class Diario {
 
     public List<Aluno> getAlunos(){
         return alunos;
+    }
+
+    public CalcularMedia getCalcular() {
+        return calcular;
+    }
+
+    public void setCalcular(CalcularMedia calcular) {
+        this.calcular = calcular;
     }
 }
