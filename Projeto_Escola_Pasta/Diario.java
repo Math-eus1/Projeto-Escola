@@ -8,14 +8,10 @@ public class Diario {
     Aluno aluno = new Aluno();
     Disciplina disciplina = new Disciplina();
 
-    public void mostrarProfessor(){
-        professor.setNome("Francisco");
-        
-    }
-
     public String getCodigo() {
         return codigo;
     }
+
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
