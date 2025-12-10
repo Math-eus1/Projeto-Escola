@@ -1,11 +1,9 @@
 package Projeto_Escola_Pasta;
 
-public class Pessoa {
+public abstract class Pessoa {
     
     private String nome;
     private String nascimento;
-
-    public Pessoa(){}
 
     public String getNome() {
         return nome;
