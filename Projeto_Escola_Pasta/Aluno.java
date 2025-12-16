@@ -13,5 +13,9 @@ public class Aluno extends Pessoa {
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
+
+    public void addDisciplina(Disciplina disciplina){
+        disciplinas.add(disciplina);
+    }
     
 }

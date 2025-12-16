@@ -11,6 +11,7 @@ public class Diario {
     public String getCodigo() {
         return codigo;
     }
+
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
@@ -24,6 +25,10 @@ public class Diario {
 
     public List<Aluno> getAlunos(){
         return alunos;
+    }
+
+    public void addAluno(Aluno aluno){
+        alunos.add(aluno);
     }
 
     public CalcularMedia getCalcular() {
