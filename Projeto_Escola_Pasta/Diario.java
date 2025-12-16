@@ -38,4 +38,12 @@ public class Diario {
     public void setCalcular(CalcularMedia calcular) {
         this.calcular = calcular;
     }
+    public void calcularMedias() {
+        for (Aluno a : alunos) {
+            for (Disciplina d : a.getDisciplinas()) {
+                double m = calcular.calcular(d.getN1(), d.getN2());
+                d.setMedia(m);
+            }
+        }
+    }
 }

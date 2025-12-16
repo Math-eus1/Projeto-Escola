@@ -14,6 +14,10 @@ public class Aluno extends Pessoa {
         this.matricula = matricula;
     }
 
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
+    }
+
     public void addDisciplina(Disciplina disciplina){
         disciplinas.add(disciplina);
     }
