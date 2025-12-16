@@ -27,6 +27,10 @@ public class Diario {
         return alunos;
     }
 
+    public void addAluno(Aluno aluno){
+        alunos.add(aluno);
+    }
+
     public CalcularMedia getCalcular() {
         return calcular;
     }
